@@ -49,14 +49,14 @@ end
 
 ```
 
-- [ ]  has_one_attached
+- [ ] has_one_attached
 - [ ] has_image
 - [ ] attached_file
 - [ ] acts_as_attachment
 
 #### Q9. Given a table of blog_posts and a related table of comments (comments made on each blog post), which ActiveRecord query will retrieve all blog posts with comments created during @range?
 
-- [ ]  BlogPost.joins (:comments).where(comments: {created_at: @range})
+- [ ] BlogPost.joins (:comments).where(comments: {created_at: @range})
 - [ ] BlogPost.where(['comments.created_at', @range])
 - [ ] BlogPost.preload ("comments.created_at").where(created_at: @range)
 - [ ] BlogPost.includes (:comments).where('comments.created_at' => @range)
@@ -64,9 +64,9 @@ end
 #### Q10. After this migration has been executed, which statement would be true?
 
 ```ruby
-class CreateGalleries < ActiveRecord::Migration
+class CreateProducts < ActiveRecord::Migration
   def change
-    create_table :galleries do |t|
+    create_table :products do |t|
       t.string :name, :bg_color
       t.integer :position
       t.boolean :visible, default: false
@@ -76,7 +76,7 @@ class CreateGalleries < ActiveRecord::Migration
 end
 ```
 
-- [ ] The galleries table will have no primary key.
-- [ ]  The galleries table will include a column named "updated_at".
-- [ ] The galleries table will contain exactly seven columns.
-- [ ] The galleries table will have an index on the position column.
+- [ ] The products table will have no primary key.
+- [ ] The products table will include a column named "updated_at".
+- [ ] The products table will contain exactly seven columns.
+- [ ] The products table will have an index on the position column.
