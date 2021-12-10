@@ -2,10 +2,7 @@
 1. ActiveRecord & RSpec
 - Tables
 	- `users`: devise table
-	  - extra fields:
-			- first_name: string
-			- last_name: string
-			- uuid: string
+	  - extra fields: first_name(string, required), last_name(string), uuid(string, unique)
 	- `subscriptions`
 	- `user_subscriptions`
 - Please add associations and validations in the each model
